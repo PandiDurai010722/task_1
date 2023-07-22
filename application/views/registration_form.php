@@ -50,7 +50,7 @@
     <input type="radio" aria-label="Radio button for following text input" id="radio" name="gender" value="Male">
     <label for="radio">Female</label>
     <input type="radio" aria-label="Radio button for following text input" id="radio" name="gender" value="Female" >
-    <input type=" " name="stgender">
+
   </div>
   </div>
 </div>

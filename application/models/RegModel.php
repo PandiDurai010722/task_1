@@ -22,16 +22,19 @@ class RegModel extends CI_Model{
     
         }
 
-    public function updateData($data,$id){
+
+    public function updateData($id,$editdata){
          $this->load->database();
          $this->db->where("id",$id);
-         return  $this->db->update($data,'staffs');
+         return  $this->db->update('staffs',$editdata);
     }
+
 
     public function deleteData($id){
         $this->load->database();
         $this->db->where("id",$id);
         return $this->db->delete('staffs');
     }
+
 }
 

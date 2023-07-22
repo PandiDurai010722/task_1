@@ -13,14 +13,14 @@ class Register extends CI_Controller{
     public function saveData(){
         
         extract($_POST);
-        $gender=null;
+        // $gender=null;
 
-        if(isset($Male)){
-            $gender="male";
+        // if(isset($Male)){
+        //     $gender="male";
 
-        }else{
-            $gender="female";
-        }
+        // }else{
+        //     $gender="female";
+        // }
         $data=['staff_name'=>$name,
         'date_of_join'=>$doj,
          'address'=>$add,
@@ -52,8 +52,19 @@ class Register extends CI_Controller{
        $result['data']=$this->RegModel->editData($id);
        $this->load->view('staff_lists',$result);
     }
+
+
     public function update(){
         extract($_POST);
+        // $gender=null;
+
+        // if(isset($Male)){
+        //     $gender="male";
+
+        // }else{
+        //     $gender="female";
+        // }
+
     $id=$nid;
     $editdata=[
         'staff_name'=>$name,
@@ -78,7 +89,7 @@ class Register extends CI_Controller{
         $result=$this->RegModel->deleteData($id);
         if(isset($result)){
             $this->fetchdata();
-        }
+                }
 
     }
 

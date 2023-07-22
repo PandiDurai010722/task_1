@@ -111,7 +111,7 @@ if(isset($table)){
       <td><?=$row->gender?></td>
       <td><?=$row->blood_group?></td>
       <td><button><a href="<?=base_url('register/edit/'.$row->id)?>">Edit</a></button></td>
-      <td><button><a href="<?=base_url('register/delete'.$row->id)?>">Delete</a></button></td>
+      <td><button><a href="<?=base_url('register/delete/'.$row->id)?>">Delete</a></button></td>
     </tr>
 
   </tbody>
