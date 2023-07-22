@@ -48,9 +48,9 @@
   <div class="input-group-prepend">
     <div class="input-group-text">
     <label for="radio">Male</label>
-    <input type="radio" aria-label="Radio button for following text input" id="radio" name="gender" value="<?=$data[0]->gender ?>">
+    <input type="radio" aria-label="Radio button for following text input" id="radio" name="gender" value="male" >
     <label for="radio">Female</label>
-    <input type="radio" aria-label="Radio button for following text input" id="radio" name="gender" value="<?=$data[0]->gender ?>">
+    <input type="radio" aria-label="Radio button for following text input" id="radio" name="gender" value="female">
     
     </div>
   </div>
