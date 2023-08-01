@@ -36,6 +36,7 @@ class Register extends CI_Controller{
         redirect(base_url("register/staff"));
     }else{
         echo 'Error wile inserting data';
+
     }
 
     }
